@@ -1,2 +1,2 @@
-<p align="center">Natural Language Processing - Project</p>
+<p align="center"><b>Natural Language Processing - Project<b></p>
 
