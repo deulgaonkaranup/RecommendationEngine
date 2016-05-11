@@ -1,4 +1,4 @@
-<p align="center"><b>Natural Language Processing - Project<b></p>
+<p align="center"><b>Natural Language Processing - Project</b></p>
 
 Vivek Pabani
 Illinois Institute of Technology
