@@ -39,7 +39,16 @@ Algorithm Pseudocode:
 - Pick K mean vectors using labeled data
 - Calculate initial mean and allow documents to assign to different cluster contradicting the label tags. We do this step to   not over fit the data
 - Iterate until  ![equation](https://latex.codecogs.com/gif.latex?%7C%5Cmu%5E%7Bnew%7D_j-%5Cmu%5E%7Bold%7D_j%7C)
-      - Assign each document x<sub>i</sub> to its closest mean vector μ<sub>j</sub>
+      - Assign each document x<sub>i</sub> to its closest mean vector μ<sub>j</sub>.
+      - Update each mean vector μ<sub>j</sub> to be the mean of the x<sub>i</sub>’s assigned to it.
+
+Distance between documents and mean are calculated using Cosine Similarity (since the documents are normalized according to their length). An error function is used as Gradient descent and the objective is to minimize this error function. It is the sum of the distance between the documents to their assigned clusters.
+
+Error Function :
+
+<p align="center">![equation](https://latex.codecogs.com/gif.latex?E%28D%2CM%29%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Csum_%7Bj%3D1%7D%5E%7BN%7Dr_%7Bij%7D%20.%20d%28x_i%2C%5Cmu_j%29)</p>
+
+
 
 Experimentatl Dataset:
 
