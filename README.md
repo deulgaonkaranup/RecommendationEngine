@@ -20,6 +20,26 @@ selected. The original n articles are picked from test dataset, where topics are
 moment, and m recommendations are given from entire dataset. User can select the articles based
 on title, and can read the text by further options.
 
+Algorithms Implemented:
+
+1.K-Means
+
+K-means is a method of vector quantization, which is popular for clustering analysis. K-means
+clustering aims to partition N observations into K clusters in which each observation belongs to the
+cluster with the nearest mean, serving as a prototype of the cluster. This results is a partitioning
+of the data space into Voronoi cells.
+
+K-means algorithm originally is a NP hard problem but using some intelligent heuristics
+can converge to a local optimum if we are working in non-convex curving function. K-means
+clustering uses Expectation Maximization approach which is an iterative approach to converge
+to local Minimum. K-means algorithm is implemented with cluster centroids with comparable
+special extent and we use hard clustering i.e. documents do not overlap into multiple clusters.
+
+Algorithm Pseudocode:
+- Pick K mean vectors using labeled data
+- Calculate initial mean and allow documents to assign to different cluster contradicting the label tags. We do this step to   not over fit the data
+- Iterate until $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
+
 Experimentatl Dataset:
 
 We have used BBC news dataset for these experiments. the dataset consists of 2225 documents
