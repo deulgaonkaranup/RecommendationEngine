@@ -38,7 +38,7 @@ special extent and we use hard clustering i.e. documents do not overlap into mul
 Algorithm Pseudocode:
 - Pick K mean vectors using labeled data
 - Calculate initial mean and allow documents to assign to different cluster contradicting the label tags. We do this step to   not over fit the data
-- Iterate until ![equation](https://latex.codecogs.com/gif.latex?|\mu^{new}_j-\mu^{old}_j|)
+- Iterate until ![equation](https://latex.codecogs.com/gif.latex?%7C%5Cmu%5E%7Bnew%7D_j-%5Cmu%5E%7Bold%7D_j%7C)
 
 
 Experimentatl Dataset:
