@@ -38,7 +38,8 @@ special extent and we use hard clustering i.e. documents do not overlap into mul
 Algorithm Pseudocode:
 - Pick K mean vectors using labeled data
 - Calculate initial mean and allow documents to assign to different cluster contradicting the label tags. We do this step to   not over fit the data
-- Iterate until $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
+- Iterate until $$$ | \mu^{new}_j - \mu^{old}_j |
+
 
 Experimentatl Dataset:
 
