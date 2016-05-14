@@ -1,12 +1,12 @@
 <p align="center"><b>Natural Language Processing - Project</b></p>
 
-Vivek Pabani
+<p align="center">Vivek Pabani
 Illinois Institute of Technology
-vpabani@hawk.iit.edu
+vpabani@hawk.iit.edu</p>
 
-Anup Deulgaonkar
+<p align="center">Anup Deulgaonkar
 Illinois Institute of Technology
-adeulgao@hawk.iit.edu
+adeulgao@hawk.iit.edu</p>
 
 Idea:
 
