@@ -22,7 +22,7 @@ on title, and can read the text by further options.
 
 <b>Algorithms Implemented</b>:
 
-<b>1. K-Means</b>
+<b><u>1. K-Means</u></b>
 
    <i>Algorithm Pseudocode</i>:
    - Pick K mean vectors using labeled data
@@ -33,11 +33,11 @@ on title, and can read the text by further options.
 
 Distance between documents and mean are calculated using Cosine Similarity (since the documents are normalized according to their length). An error function is used as Gradient descent and the objective is to minimize this error function. It is the sum of the distance between the documents to their assigned clusters.
 
-Error Function :
+<u>Error Function</u>:
 
 ![equation](https://latex.codecogs.com/gif.latex?E%28D%2CM%29%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Csum_%7Bj%3D1%7D%5E%7BN%7Dr_%7Bij%7D%20.%20d%28x_i%2C%5Cmu_j%29)
 
-<b>2. Naive Bayes</b>:
+<b><u>2. Naive Bayes</u></b>:
 
 ![equation](https://latex.codecogs.com/gif.latex?P%28c_i%7C%5Coverrightarrow%7Bd_j%7D%29%20%3D%20%5Cfrac%7BP%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20.%20p%28c_i%29%7D%7BP%28%5Coverrightarrow%7Bd_j%7D%29%7D)
 
@@ -59,12 +59,12 @@ Using this, the probability of a document given the class is given by
 
 ![equation](https://latex.codecogs.com/gif.latex?P%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20%3D%20P%28c_i%29%20.%20P%28w_1%7Cc_i%29%20.%20P%28w_2%7Cc_i%29.......P%28w_n%7Cc_i%29)
 
-<b>3. Rank Classifier</b>: 
+<b><u>3. Rank Classifier</u></b>: 
 
 We also use Rank Classifier mentioned in paper by Qirui Zhang in the paper ‘Machine Learning Methods for Medical Text Categorization’.
 
 
-<b>4. K-Nearest Neighbour</b>:
+<b><u>4. K-Nearest Neighbour</u></b>:
 
 The model for kNN is the entire training dataset. When a prediction is required for a unseen data instance, the kNN algorithm will search through the training dataset for the k-most similar instances. The prediction attribute of the most similar instances is summarized and returned as the prediction for the unseen instance. The decision rule in kNN can be written as:
 
@@ -74,7 +74,7 @@ The model for kNN is the entire training dataset. When a prediction is required 
 
 Here, sim(x, d<sub>j</sub>) is cosine similarity between two documents based on their vector representation. y(x, c<sub>i</sub>) returns the value 1 or 0 based on the category prediction for i<sup>th</sup> category. We have used K-Nearest Neighbor in the final stage of recommendation system in order to find the k closest articles from the source document. This is done after the other algorithms have correctly classified the document first.
 
-<b>Experimentatl Dataset</b>:
+<b><u>Experimentatl Dataset</u></b>:
 
 We have used BBC news dataset for these experiments. the dataset consists of 2225 documents
 from the BBC news website corresponding to stories in five topical areas from 2004-2005. The
