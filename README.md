@@ -48,10 +48,12 @@ Error Function :
 
 ![equation](https://latex.codecogs.com/gif.latex?E%28D%2CM%29%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Csum_%7Bj%3D1%7D%5E%7BN%7Dr_%7Bij%7D%20.%20d%28x_i%2C%5Cmu_j%29)
 
+2. Naive Bayes:
+![equation](https://latex.codecogs.com/gif.latex?P%28c_i%7C%5Coverrightarrow%7Bd_j%7D%29%20%3D%20%5Cfrac%7BP%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20.%20p%28c_i%29%7D%7BP%28%5Coverrightarrow%7Bd_j%7D%29%7D)
 
+The key is how to compute the posterior probability P(c<sub>i</sub>|~d<sub>j</sub>) that document d<sub>j</sub> belongs to category c<sub>i</sub>. According to Bayes formula, the posterior probability P(c<sub>i</sub>|~d<sub>j</sub>) is translated to compute the prior probability P(~d<sub>j</sub>|c<sub>i</sub>). Then, the categories that have the most prior probability are judged into the final categories of document d<sub>j</sub>.
 
 Experimentatl Dataset:
-
 We have used BBC news dataset for these experiments. the dataset consists of 2225 documents
 from the BBC news website corresponding to stories in five topical areas from 2004-2005. The
 topics are business, entertainment, politics, sport and tech. Each document has a title and article
