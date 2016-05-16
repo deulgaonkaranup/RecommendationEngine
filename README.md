@@ -24,17 +24,6 @@ on title, and can read the text by further options.
 
 <b>1. K-Means</b>
 
-K-means is a method of vector quantization, which is popular for clustering analysis. K-means
-clustering aims to partition N observations into K clusters in which each observation belongs to the
-cluster with the nearest mean, serving as a prototype of the cluster. This results is a partitioning
-of the data space into Voronoi cells.
-
-K-means algorithm originally is a NP hard problem but using some intelligent heuristics
-can converge to a local optimum if we are working in non-convex curving function. K-means
-clustering uses Expectation Maximization approach which is an iterative approach to converge
-to local Minimum. K-means algorithm is implemented with cluster centroids with comparable
-special extent and we use hard clustering i.e. documents do not overlap into multiple clusters.
-
 <b>Algorithm Pseudocode</b>:
 - Pick K mean vectors using labeled data
 - Calculate initial mean and allow documents to assign to different cluster contradicting the label tags. We do this step to   not over fit the data
