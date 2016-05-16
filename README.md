@@ -60,13 +60,18 @@ Here P(c<sub>i</sub>) denotes the probability of category csub>i</sub> in the tr
 ![equation](https://latex.codecogs.com/gif.latex?argmax_%7Bc_i%7D%20P%28c_i%7Cd_j%29%20%3D%20argmax_%7Bc_i%7D%20P%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20.%20P%28c_i%29)
 
 
-We have used Multinomial Naive Bayes, in which we take into account the term frequency in the class, the term count of the class and vocabulary of the dataset. If ![equation](https://latex.codecogs.com/gif.latex?%5Coverrightarrow%7Bd_j%7D%20%3D%20%28%7Bw_1%2Cw_2........w_n%7D%29), then the probability of a token wsub>j</sub> given class c<sub>i</sub> is calculated by
+We have used Multinomial Naive Bayes, in which we take into account the term frequency in the class, the term count of the class and vocabulary of the dataset. If   ![equation](https://latex.codecogs.com/gif.latex?%5Coverrightarrow%7Bd_j%7D%20%3D%20%28%7Bw_1%2Cw_2........w_n%7D%29), then the probability of a token wsub>j</sub> given class c<sub>i</sub> is calculated by
 
 
 ![equation](https://latex.codecogs.com/gif.latex?P%28%5Coverrightarrow%7Bw_j%7D%7Cc_i%29%20%3D%20%5Cfrac%7Bcount%28w_j%2Cc_i%29%20&plus;%201%7D%7Bcount%28c%29%20&plus;%20%7CV%7C%7D)
 
+Using this, the probability of a document given the class is given by
 
-Experimentatl Dataset:
+
+![equation](https://latex.codecogs.com/gif.latex?P%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20%3D%20P%28c_i%29%20.%20P%28w_1%7Cc_i%29%20.%20P%28w_2%7Cc_i%29.......P%28w_n%7Cc_i%29)
+
+<b>Experimentatl Dataset</b>:
+
 We have used BBC news dataset for these experiments. the dataset consists of 2225 documents
 from the BBC news website corresponding to stories in five topical areas from 2004-2005. The
 topics are business, entertainment, politics, sport and tech. Each document has a title and article
