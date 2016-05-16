@@ -74,7 +74,8 @@ Using this, the probability of a document given the class is given by
 
 We also use Rank Classifier mentioned in paper by Qirui Zhang in the paper ‘Machine Learning Methods for Medical Text Categorization’.
 
-4. <b>K-Nearest Neighbour</b>:
+
+<b>4. K-Nearest Neighbour</b>:
 
 The model for kNN is the entire training dataset. When a prediction is required for a unseen data instance, the kNN algorithm will search through the training dataset for the k-most similar instances. The prediction attribute of the most similar instances is summarized and returned as the prediction for the unseen instance. The decision rule in kNN can be written as:
 
