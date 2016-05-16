@@ -24,12 +24,12 @@ on title, and can read the text by further options.
 
 <b>1. K-Means</b>
 
-      <i>Algorithm Pseudocode</i>:
-            - Pick K mean vectors using labeled data
-            - Calculate initial mean and allow documents to assign to different cluster contradicting the label tags. We do this step   to not over fit the data
-            - Iterate until  ![equation](https://latex.codecogs.com/gif.latex?%7C%5Cmu%5E%7Bnew%7D_j-%5Cmu%5E%7Bold%7D_j%7C)
-                  - Assign each document x<sub>i</sub> to its closest mean vector μ<sub>j</sub>.
-                  - Update each mean vector μ<sub>j</sub> to be the mean of the x<sub>i</sub>’s assigned to it.
+   <i>Algorithm Pseudocode</i>:
+      - Pick K mean vectors using labeled data
+      - Calculate initial mean and allow documents to assign to different cluster contradicting the label tags. We do this step   to    not over fit the data
+      - Iterate until  ![equation](https://latex.codecogs.com/gif.latex?%7C%5Cmu%5E%7Bnew%7D_j-%5Cmu%5E%7Bold%7D_j%7C)
+            - Assign each document x<sub>i</sub> to its closest mean vector μ<sub>j</sub>.
+            - Update each mean vector μ<sub>j</sub> to be the mean of the x<sub>i</sub>’s assigned to it.
 
 Distance between documents and mean are calculated using Cosine Similarity (since the documents are normalized according to their length). An error function is used as Gradient descent and the objective is to minimize this error function. It is the sum of the distance between the documents to their assigned clusters.
 
