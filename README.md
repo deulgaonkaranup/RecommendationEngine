@@ -54,6 +54,18 @@ Error Function :
 
 The key is how to compute the posterior probability ![equation](https://latex.codecogs.com/gif.latex?P%28c_i%7C%5Coverrightarrow%7Bd_j%7D%29) that document d<sub>j</sub> belongs to category c<sub>i</sub>. According to Bayes formula, the posterior probability ![equation](https://latex.codecogs.com/gif.latex?P%28c_i%7C%5Coverrightarrow%7Bd_j%7D%29) is translated to compute the prior probability ![equation](https://latex.codecogs.com/gif.latex?P%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29). Then, the categories that have the most prior probability are judged into the final categories of document d<sub>j</sub>.
 
+Here P(c<sub>i</sub>) denotes the probability of category csub>i</sub> in the training set and P(dsub>j</sub>) denotes document dsub>j</sub> in the training set. Because P(dsub>j</sub>) is invariant for a given document dsub>j</sub> in all categories. The final category is decided by following formula :
+
+
+![equation](https://latex.codecogs.com/gif.latex?argmax_%7Bc_i%7D%20P%28c_i%7Cd_j%29%20%3D%20argmax_%7Bc_i%7D%20P%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20.%20P%28c_i%29)
+
+
+We have used Multinomial Naive Bayes, in which we take into account the term frequency in the class, the term count of the class and vocabulary of the dataset. If ![equation](https://latex.codecogs.com/gif.latex?%5Coverrightarrow%7Bd_j%7D%20%3D%20%28%7Bw_1%2Cw_2........w_n%7D%29), then the probability of a token wsub>j</sub> given class c<sub>i</sub> is calculated by
+
+
+![equation](https://latex.codecogs.com/gif.latex?P%28%5Coverrightarrow%7Bw_j%7D%7Cc_i%29%20%3D%20%5Cfrac%7Bcount%28w_j%2Cc_i%29%20&plus;%201%7D%7Bcount%28c%29%20&plus;%20%7CV%7C%7D)
+
+
 Experimentatl Dataset:
 We have used BBC news dataset for these experiments. the dataset consists of 2225 documents
 from the BBC news website corresponding to stories in five topical areas from 2004-2005. The
