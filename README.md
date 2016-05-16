@@ -22,7 +22,7 @@ on title, and can read the text by further options.
 
 <b>Algorithms Implemented</b>:
 
-1.<b>K-Means</b>
+<b>1. K-Means</b>
 
 K-means is a method of vector quantization, which is popular for clustering analysis. K-means
 clustering aims to partition N observations into K clusters in which each observation belongs to the
@@ -48,7 +48,7 @@ Error Function :
 
 ![equation](https://latex.codecogs.com/gif.latex?E%28D%2CM%29%20%3D%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Csum_%7Bj%3D1%7D%5E%7BN%7Dr_%7Bij%7D%20.%20d%28x_i%2C%5Cmu_j%29)
 
-2. <b>Naive Bayes</b>:
+<b>2. Naive Bayes</b>:
 
 ![equation](https://latex.codecogs.com/gif.latex?P%28c_i%7C%5Coverrightarrow%7Bd_j%7D%29%20%3D%20%5Cfrac%7BP%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20.%20p%28c_i%29%7D%7BP%28%5Coverrightarrow%7Bd_j%7D%29%7D)
 
