@@ -70,6 +70,20 @@ Using this, the probability of a document given the class is given by
 
 ![equation](https://latex.codecogs.com/gif.latex?P%28%5Coverrightarrow%7Bd_j%7D%7Cc_i%29%20%3D%20P%28c_i%29%20.%20P%28w_1%7Cc_i%29%20.%20P%28w_2%7Cc_i%29.......P%28w_n%7Cc_i%29)
 
+<b>3. Rank Classifier</b>: 
+
+We also use Rank Classifier mentioned in paper by Qirui Zhang in the paper ‘Machine Learning Methods for Medical Text Categorization’.
+
+4. <b>K-Nearest Neighbour</b>:
+
+The model for kNN is the entire training dataset. When a prediction is required for a unseen data instance, the kNN algorithm will search through the training dataset for the k-most similar instances. The prediction attribute of the most similar instances is summarized and returned as the prediction for the unseen instance. The decision rule in kNN can be written as:
+
+
+![equation](https://latex.codecogs.com/gif.latex?y%28x%2Cc_i%29%20%3D%20%5Csum%20sim%28x%2Cd_j%29%20.%20y%28d_j%2Cc_i%29)
+
+
+Here, sim(x, d<sub>j</sub>) is cosine similarity between two documents based on their vector representation. y(x, c<sub>i</sub>) returns the value 1 or 0 based on the category prediction for i<sup>th</sup> category. We have used K-Nearest Neighbor in the final stage of recommendation system in order to find the k closest articles from the source document. This is done after the other algorithms have correctly classified the document first.
+
 <b>Experimentatl Dataset</b>:
 
 We have used BBC news dataset for these experiments. the dataset consists of 2225 documents
