@@ -8,7 +8,7 @@ This script implements KNN algorithm which provides methods to find k closest do
 
 """
 
-__author__ = 'vivek'
+__author__ = 'anup'
 
 from tfidf import *
 
