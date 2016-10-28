@@ -8,7 +8,7 @@ This script defines the structure of a document object. The data is tokenized an
 
 """
 
-__author__ = 'vivek'
+__author__ = 'anup'
 
 from nltk.stem.porter import *
 from nltk.stem.wordnet import WordNetLemmatizer
