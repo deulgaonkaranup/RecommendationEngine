@@ -8,7 +8,7 @@ This script is an implementation of Multinomial Naive bayes.
 
 """
 
-__author__ = 'vivek'
+__author__ = 'anup'
 
 import operator
 import math
