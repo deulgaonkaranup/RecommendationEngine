@@ -74,7 +74,7 @@ The model for kNN is the entire training dataset. When a prediction is required 
 
 Here, sim(x, d<sub>j</sub>) is cosine similarity between two documents based on their vector representation. y(x, c<sub>i</sub>) returns the value 1 or 0 based on the category prediction for i<sup>th</sup> category. We have used K-Nearest Neighbor in the final stage of recommendation system in order to find the k closest articles from the source document. This is done after the other algorithms have correctly classified the document first.
 
-<b><u>Experimentatl Dataset</u></b>:
+<b><u>Experimental Dataset</u></b>:
 
 We have used BBC news dataset for these experiments. the dataset consists of 2225 documents
 from the BBC news website corresponding to stories in five topical areas from 2004-2005. The
